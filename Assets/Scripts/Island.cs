@@ -17,11 +17,25 @@ public class Island : MonoBehaviour
     {
         this.index = index;
         this.isOpen = isOpen;
-       
-        for (int i = 0; i < openIslands.Length; i++)
+        
+        if (openIslands != null && openIslands.Length > 0)
         {
-            if(openIslands[i]!=null)
-            openIslands[i].gameObject.SetActive(isOpen);
+            for (int i = 0; i < openIslands.Length; i++)
+            {
+                // Проверяем, что элемент массива не null
+                if (openIslands[i] != null)
+                {
+                    openIslands[i].gameObject.SetActive(isOpen);
+                }
+                else
+                {
+                    Debug.LogWarning($"Element at index {i} in openIslands array is null.");
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning("openIslands array is null or empty.");
         }
 
         gameObject.SetActive(!isOpen);
