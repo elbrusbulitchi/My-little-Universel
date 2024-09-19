@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6889449, g: 0.29220134, b: 0.17016156, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -259,6 +259,10 @@ PrefabInstance:
     - target: {fileID: 609143962289578257, guid: b9687cca8e68179469bc92e9f24dcae4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592280565423915170, guid: b9687cca8e68179469bc92e9f24dcae4, type: 3}
+      propertyPath: openIslands.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2908007058278374955, guid: b9687cca8e68179469bc92e9f24dcae4, type: 3}
       propertyPath: m_Name

@@ -17,8 +17,10 @@ public class Island : MonoBehaviour
     {
         this.index = index;
         this.isOpen = isOpen;
+       
         for (int i = 0; i < openIslands.Length; i++)
         {
+            if(openIslands[i]!=null)
             openIslands[i].gameObject.SetActive(isOpen);
         }
 
